@@ -7,12 +7,7 @@ var caminho,
 
 
 
-    // Adiciona Scrollbar quando necessário na div #indicacao
-    $(function()
-    {
-        $('.scroll-pane').jScrollPane();
-    });
-    // Fim ./ Adiciona Scrollbar quando necessário na div #indicacao
+
 function startApp ()
 {
     init_body();
