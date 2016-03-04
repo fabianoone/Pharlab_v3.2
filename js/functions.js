@@ -1,3 +1,5 @@
+// JavaScript file
+
 var showMenu = 0,
     scrollContent,
     scrollNav,
@@ -165,7 +167,7 @@ function fileListVideos(){
         {
             var fileName = jsArray.FILES[i].FILE;
             var fileNameSplitted = fileName.split(separator);
-            html += "<li onClick=\"showDoc('videos/"+encodeURI(fileName)+"')\"><img src=\"videos/img/"+encodeURI(fileName).replace(".pdf",".mov")+"\" /></li>";
+            html += "<li onClick=\"showDoc('videos/"+encodeURI(fileName)+"')\"><img src=\"videos/img/"+encodeURI(fileName).replace(".mov",".jpg")+"\" /></li>";
         }
     }
 

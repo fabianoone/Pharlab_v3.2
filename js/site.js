@@ -79,6 +79,12 @@ function appMenu(){
 
 }
 function menuInterna(){
+	// Adiciona Scrollbar quando necessário na div #indicacao
+    $(function()
+    {
+        $('.scroll-pane').jScrollPane();
+    });
+    // Fim ./ Adiciona Scrollbar quando necessário na div #indicacao
 
     var myContentMenu = '<nav class="navbar col-sm-6"><div id="mouseOut" onclick="fechaMenu();"></div> <div class=""><div id="back-link" class="col-sm-1"><a class="back-link-btn" onclick="goBack()" style="display: block;cursor: pointer;float: left;"> <span class="back-link-btn fa fa-arrow-circle-o-left"></span></a> </div> <div class="col-sm-6 sidebar"> <div class="mini-submenu" onclick="abreMenu()"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </div> <div id="boxxx" class="col-sm-12 list-group menu-box"> <span class="list-group-item active">Produtos <span onclick="fechaMenu()" class="pull-right" id="slide-submenu"> <i class="fa fa-times"></i> </span> </span> <div id="header_menu" class="produtos"> </div> </div> </div> </div></nav>';
 
